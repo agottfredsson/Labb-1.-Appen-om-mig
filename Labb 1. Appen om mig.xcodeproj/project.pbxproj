@@ -16,6 +16,10 @@
 		3A9EC04323C7E2AC006B712F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EC04223C7E2AC006B712F /* main.m */; };
 		3A9EC04D23C7E2AC006B712F /* Labb_1__Appen_om_migTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EC04C23C7E2AC006B712F /* Labb_1__Appen_om_migTests.m */; };
 		3A9EC05823C7E2AC006B712F /* Labb_1__Appen_om_migUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EC05723C7E2AC006B712F /* Labb_1__Appen_om_migUITests.m */; };
+		3A9EC06A23C7EC36006B712F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EC06923C7EC36006B712F /* GameViewController.m */; };
+		3A9EC0AE23C8D50E006B712F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EC0AD23C8D50E006B712F /* AboutViewController.m */; };
+		3A9EC0B123CC6E25006B712F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EC0B023CC6E25006B712F /* SettingsViewController.m */; };
+		3AD0B0F223CF28340081927B /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD0B0F123CF28340081927B /* Singleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,14 @@
 		3A9EC05323C7E2AC006B712F /* Labb 1. Appen om migUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Labb 1. Appen om migUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9EC05723C7E2AC006B712F /* Labb_1__Appen_om_migUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Labb_1__Appen_om_migUITests.m; sourceTree = "<group>"; };
 		3A9EC05923C7E2AC006B712F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9EC06823C7EC36006B712F /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		3A9EC06923C7EC36006B712F /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		3A9EC0AC23C8D50E006B712F /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		3A9EC0AD23C8D50E006B712F /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		3A9EC0AF23CC6E25006B712F /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		3A9EC0B023CC6E25006B712F /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		3AD0B0F023CF28340081927B /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		3AD0B0F123CF28340081927B /* Singleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +116,25 @@
 		3A9EC02F23C7E2AB006B712F /* Labb 1. Appen om mig */ = {
 			isa = PBXGroup;
 			children = (
+				3A9EC03923C7E2AB006B712F /* Main.storyboard */,
 				3A9EC03023C7E2AB006B712F /* AppDelegate.h */,
 				3A9EC03123C7E2AB006B712F /* AppDelegate.m */,
 				3A9EC03323C7E2AB006B712F /* SceneDelegate.h */,
 				3A9EC03423C7E2AB006B712F /* SceneDelegate.m */,
 				3A9EC03623C7E2AB006B712F /* ViewController.h */,
 				3A9EC03723C7E2AB006B712F /* ViewController.m */,
-				3A9EC03923C7E2AB006B712F /* Main.storyboard */,
+				3AD0B0F023CF28340081927B /* Singleton.h */,
+				3AD0B0F123CF28340081927B /* Singleton.m */,
+				3A9EC0AF23CC6E25006B712F /* SettingsViewController.h */,
+				3A9EC0B023CC6E25006B712F /* SettingsViewController.m */,
 				3A9EC03C23C7E2AC006B712F /* Assets.xcassets */,
 				3A9EC03E23C7E2AC006B712F /* LaunchScreen.storyboard */,
 				3A9EC04123C7E2AC006B712F /* Info.plist */,
 				3A9EC04223C7E2AC006B712F /* main.m */,
+				3A9EC06823C7EC36006B712F /* GameViewController.h */,
+				3A9EC06923C7EC36006B712F /* GameViewController.m */,
+				3A9EC0AC23C8D50E006B712F /* AboutViewController.h */,
+				3A9EC0AD23C8D50E006B712F /* AboutViewController.m */,
 			);
 			path = "Labb 1. Appen om mig";
 			sourceTree = "<group>";
@@ -267,10 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9EC0AE23C8D50E006B712F /* AboutViewController.m in Sources */,
+				3AD0B0F223CF28340081927B /* Singleton.m in Sources */,
+				3A9EC06A23C7EC36006B712F /* GameViewController.m in Sources */,
 				3A9EC03823C7E2AB006B712F /* ViewController.m in Sources */,
 				3A9EC03223C7E2AB006B712F /* AppDelegate.m in Sources */,
 				3A9EC04323C7E2AC006B712F /* main.m in Sources */,
 				3A9EC03523C7E2AB006B712F /* SceneDelegate.m in Sources */,
+				3A9EC0B123CC6E25006B712F /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Singleton.h"
+
+
+
+
 
 @interface ViewController ()
 
@@ -16,7 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.view.backgroundColor = [[Singleton Instance] GetData];
 }
 
 
